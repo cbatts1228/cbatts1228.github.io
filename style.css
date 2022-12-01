@@ -1,0 +1,479 @@
+form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+    margin-bottom: .5em;
+}
+input,textarea{
+    margin-bottom: .5em;
+}
+
+form button{
+    padding: .5em;
+}
+
+table{
+    width: 60%;
+    border: 1px solid #010508;
+    border-collapse: collapse;
+    background-color: #DDE0E9;
+    margin-bottom: 1em;
+    margin-left: auto; margin-right: auto;
+}
+
+td,th{
+    padding: 5px;
+    border: 1px solid #010508;
+
+}
+
+caption{
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+
+
+
+/* full screen */
+@media(min-width:1024px){
+    form{
+        width:60%;
+        display: grid;
+        grid-template-columns: 12em 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1em; gap: 1em;
+    }
+    label{
+        text-align: right;
+    }
+    
+    /*specifically button that can submit*/
+    button[submit]{
+        grid-column: 2;
+        width: 9em;
+    }
+
+    body{
+        margin:0;
+        background-color: #DDE0E9;
+        font-family:Verdana, Arial,sans-serif;
+    }
+    header{
+        background-image: url("Images/sunrise.jpg");
+        background-color: #9DACB1;
+        background-size: 100% 100%; /*stretch the image to 100% of the percent*/
+        text-align: left;
+        font-size: 120%;
+        min-height: 200px;
+        margin-top: 50px;
+        align:"right";
+    }
+    header a:link{text-decoration: none; display: block;}
+    header a:visited{text-decoration: none; display: block; color: #ff5039;}
+    header a:hover{text-decoration: none; display: block; color: #FAA4B0}
+
+    h1{
+        line-height: 200%;
+        padding-top: 50px;
+        padding-left: 2em;
+    }
+    h2{
+        font-size: 200%;
+    }
+    nav{
+        position: fixed;
+        top:0;
+        left:0;
+        text-align: right;
+        background-color: #FFF;
+        margin: 0;
+        padding: 0.5em;
+        padding-right: 0;
+        width: 100%;
+        z-index:9999;       /* ensure it is on top*/
+    }
+    nav a{
+        text-decoration: none; /*remove the hyperlink line*/
+        display: block;
+    }
+
+    nav ul{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        list-style-type: none;  /*removes bullet points*/
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+    nav li{
+        width:7em;
+        padding: 0 1em 0 1em;
+        display: inline;
+    }
+
+    nav a:link{color: #3F2860}
+    nav a:visited{color: #497777}
+    nav a:hover{color: #A26100; border: 3px inset #333333}
+
+    a:link{text-decoration: none; color: #FAA4B0}
+    a:visited{text-decoration: none; color: #010508}
+    a:hover{text-decoration: none; color: #FAA4B0}
+    
+
+    footer{
+        background-color: #80CBC4;
+        font-size: .60em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        padding: 1em;
+    }
+
+    /* class */
+    .studio{
+        color: #40407A;
+        font-style: italic;
+    }
+
+    /* id styling */
+    /* purpose of this id is to wrap the text */
+    #wrapper{
+        margin: auto;
+        width: 80%;
+        background-color: #DDE0E9;
+        padding: 2em;
+    }
+
+    .home{          /* home page, the header will be larger */
+        height:50vh;
+        padding-left: 8em;
+        padding-top: 4em;
+    }
+
+    .content{       /* other pages, the header will be slightly smaller */
+        height:30vh;
+        padding-left: 8em;
+        padding-top: 3em;
+    }
+
+    #mathero{
+        background-image: url("images/yogamat.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        height: 300px;
+        padding-bottom: 1em;
+    }
+
+    #loungehero{
+        background-image: url("images/yogalounge.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        height: 300px;
+        padding-bottom: 1em;
+    }
+
+    #storehero{
+        background-image: url("images/yogamat.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        height: 300px;
+        padding-bottom: 1em;
+    }
+
+    #mobile{
+        display: none;
+    }
+    #desktop{
+        display: inline;
+    }
+
+
+    section{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    #flow{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    /*global property*/
+    * {box-sizing: border-box;}
+    }
+
+    /* half screen*/
+@media(min-width:660px){
+    form{
+        width:90%;
+        display: grid;
+        grid-template-columns: 12em 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1em; gap: 1em;
+    }
+    label{
+        text-align: right;
+    }
+    
+    /*specifically button that can submit*/
+    button[submit]{
+        grid-column: 2;
+        width: 9em;
+    }
+
+    body{
+        margin:0;
+        background-color: #DDE0E9;
+        font-family:Verdana, Arial,sans-serif;
+    }
+    header{
+        background-color: #9DACB1;
+        background-size: 100% 100%; /*stretch the image to 100% of the percent*/
+        text-align: left;
+        font-size: 120%;
+        min-height: 200px;
+        margin-top: 50px;
+        align:"right";
+    }
+    header a:link{text-decoration: none; display: block; color: #ff5039;}
+    header a:visited{text-decoration: none; display: block; color: #f36452;}
+    header a:hover{text-decoration: none; display: block; color: #FAA4B0}
+    
+    /* h1{
+        line-height: 200%;
+        padding-top: 50px;
+        padding-left: 2em;
+    } */
+    h2{
+        font-size: 200%;
+    }
+    nav{
+        position: fixed;
+        top:0;
+        left:0;
+        text-align: right;
+        background-color: #DDE0E9;
+        margin: 0;
+        padding: 0.5em;
+        padding-right: 0;
+        width: 100%;
+        z-index:9999;       /* ensure it is on top*/
+    }
+    nav a{
+        text-decoration: none; /*remove the hyperlink line*/
+        display: block;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        list-style-type: none;  /*removes bullet points*/
+        margin: 0;
+        font-size: 1.2em;
+    }
+    
+    nav li{
+        width:7em;
+        padding: 0 1em 0 1em;
+    }
+    
+    nav a:link{color: #010508}
+    nav a:visited{color: #FAA4B0}
+    nav a:hover{color: #64564e; border: 3px inset #333333}
+
+    a:link{text-decoration: none; color: #FAA4B0}
+    a:visited{text-decoration: none; color: #010508}
+    a:hover{text-decoration: none; color: #FAA4B0}
+    
+    footer{
+        background-color: #80CBC4;
+        font-size: .60em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+    }
+    
+    /* class */
+    .studio{
+        color: #40407A;
+        font-style: italic;
+    }
+    
+    /* id styling */
+    /* purpose of this id is to wrap the text */
+    #wrapper{
+        background-color: #DDE0E9;
+        padding: 2em;
+    }
+    
+    .home{          /* home page, the header will be larger */
+        height:20vh;
+        padding-left: 10%;
+        padding-top: 2em;
+    }
+    
+    .content{       /* other pages, the header will be slightly smaller */
+        height:30vh;
+        padding-left: 10%;
+        padding-top: 2em;
+    }
+    
+    
+    #mobile{
+        display: none;
+    }
+    #desktop{
+        display: inline;
+    }
+    
+    
+    section{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    
+    #flow{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #clear{
+        clear:both;
+    }
+    
+    /*global property*/
+    * {box-sizing: border-box;}
+    }
+
+/* mobile screen */
+@media(max-width:600px){
+    body{
+        margin:0;
+        background-color: #DDE0E9;
+        font-family:Verdana, Arial,sans-serif;
+    }
+    header{
+        background-color: #9DACB1;
+        background-size: 100% 100%; /*stretch the image to 100% of the percent*/
+        text-align: center;
+        font-size: 120%;
+        min-height: 200px;
+        margin-top: 50px;
+        align:"right";
+    }
+    header a:link{text-decoration: none; display: block; color: #ff5039}
+    header a:visited{text-decoration: none; display: block; color: #ff5039;}
+    header a:hover{text-decoration: none; display: block; color: #FAA4B0}
+    
+    /* h1{
+        line-height: 200%;
+        padding-top: 50px;
+        padding-left: 2em;
+    } */
+    h2{
+        font-size: 200%;
+    }
+    nav{
+        position: fixed;
+        top:0;
+        left:0;
+        text-align: right;
+        background-color: #DDE0E9;
+        margin: 0;
+        padding: 0.5em;
+        padding-right: 0;
+        width: 100%;
+        z-index:9999;       /* ensure it is on top*/
+    }
+    nav a{
+        text-decoration: none; /*remove the hyperlink line*/
+        display: block;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        list-style-type: none;  /*removes bullet points*/
+        margin: 0;
+        font-size: 1.2em;
+    }
+    
+    nav li{
+        width:40%;
+        padding: 0 1em 0 1em;
+        display:inline
+    }
+    
+    nav a:link{color: #010508}
+    nav a:visited{color: #FAA4B0}
+    nav a:hover{color: #64564e; border: 3px inset #333333}
+
+    a:link{text-decoration: none; color: #FAA4B0}
+    a:visited{text-decoration: none; color: #010508}
+    a:hover{text-decoration: none; color: #FAA4B0}
+    
+    
+    
+    /* class */
+    .studio{
+        color: #40407A;
+        font-style: italic;
+    }
+    
+    /* id styling */
+    /* purpose of this id is to wrap the text */
+    #wrapper{
+        background-color: #DDE0E9;
+        padding: 2em;
+    }
+    
+    .home{          /* home page, the header will be larger */
+        height:20vh;
+        padding-left: 10%;
+        padding-top: 2em;
+    }
+    
+    .content{       /* other pages, the header will be slightly smaller */
+        height:30vh;
+        padding-left: 10%;
+        padding-top: 2em;
+    }
+    
+    
+    #mobile{        /*this is visible*/
+        display: inline;
+    }
+    #desktop{       /*this is invisible*/
+        display: none;
+    }
+    
+    
+    section{
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+    
+    #flow{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    /* #clear{
+        clear:both;
+    } */
+    
+    /*global property*/
+    * {box-sizing: border-box;}
+    }
