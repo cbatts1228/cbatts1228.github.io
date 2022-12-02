@@ -35,8 +35,6 @@ caption{
 }
 
 
-
-
 /* full screen */
 @media(min-width:1024px){
     form{
@@ -71,7 +69,7 @@ caption{
         margin-top: 50px;
         align:"right";
     }
-    header a:link{text-decoration: none; display: block;}
+    header a:link{text-decoration: none; display: block; }
     header a:visited{text-decoration: none; display: block; color: #ff5039;}
     header a:hover{text-decoration: none; display: block; color: #FAA4B0}
 
@@ -160,32 +158,6 @@ caption{
         padding-top: 3em;
     }
 
-    #mathero{
-        background-image: url("images/yogamat.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: block;
-        height: 300px;
-        padding-bottom: 1em;
-    }
-
-    #loungehero{
-        background-image: url("images/yogalounge.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: block;
-        height: 300px;
-        padding-bottom: 1em;
-    }
-
-    #storehero{
-        background-image: url("images/yogamat.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: block;
-        height: 300px;
-        padding-bottom: 1em;
-    }
 
     #mobile{
         display: none;
@@ -247,11 +219,11 @@ caption{
     header a:visited{text-decoration: none; display: block; color: #f36452;}
     header a:hover{text-decoration: none; display: block; color: #FAA4B0}
     
-    /* h1{
+    h1{
         line-height: 200%;
         padding-top: 50px;
         padding-left: 2em;
-    } */
+    } 
     h2{
         font-size: 200%;
     }
@@ -311,6 +283,8 @@ caption{
     /* id styling */
     /* purpose of this id is to wrap the text */
     #wrapper{
+        margin: auto;
+        width: 80%;
         background-color: #DDE0E9;
         padding: 2em;
     }
@@ -375,11 +349,11 @@ caption{
     header a:visited{text-decoration: none; display: block; color: #ff5039;}
     header a:hover{text-decoration: none; display: block; color: #FAA4B0}
     
-    /* h1{
+    h1{
         line-height: 200%;
         padding-top: 50px;
-        padding-left: 2em;
-    } */
+        
+    } 
     h2{
         font-size: 200%;
     }
