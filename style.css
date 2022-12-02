@@ -67,7 +67,6 @@ caption{
         font-size: 120%;
         min-height: 200px;
         margin-top: 50px;
-        align:"right";
     }
     header a:link{text-decoration: none; display: block; }
     header a:visited{text-decoration: none; display: block; color: #ff5039;}
@@ -213,7 +212,6 @@ caption{
         font-size: 120%;
         min-height: 200px;
         margin-top: 50px;
-        align:"right";
     }
     header a:link{text-decoration: none; display: block; color: #ff5039;}
     header a:visited{text-decoration: none; display: block; color: #f36452;}
@@ -343,7 +341,6 @@ caption{
         font-size: 120%;
         min-height: 200px;
         margin-top: 50px;
-        align:"right";
     }
     header a:link{text-decoration: none; display: block; color: #ff5039}
     header a:visited{text-decoration: none; display: block; color: #ff5039;}
